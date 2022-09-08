@@ -18,6 +18,8 @@ jobs:
           passphrase: ${{ secrets.VPASSPHRASE }}
           script: |
               cd /home/bima/agency_db
+              git add .
+              git stash
               git pull
               docker rm $(docker stop $(docker ps -a -q --filter ancestor=laughface809/php_manifest --format="{{.ID}}"))
               docker compose up -d
