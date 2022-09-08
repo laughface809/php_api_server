@@ -1,5 +1,5 @@
 {
-    "name": "sawarame/php-json-server",
+    "name": "laughface809/php-api-server",
     "description": "REST API that can use JSON format files.",
     "type": "project",
     "license": "BSD-3-Clause",

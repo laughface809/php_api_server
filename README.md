@@ -1,9 +1,9 @@
 # php-json-sever
 
-[![Build Status](https://github.com/sawarame/php-json-server/workflows/build/badge.svg?branch=master)](https://github.com/sawarame/php-json-server/actions?query=workflow%3Abuild+branch%3Amaster)
-[![Version](https://img.shields.io/packagist/v/sawarame/php-json-server.svg?style=flat)](https://packagist.org/packages/sawarame/php-json-server)
+[![Build Status](https://github.com/laughface809/php-api-server/workflows/build/badge.svg?branch=master)](https://github.com/laughface809/php-api-server/actions?query=workflow%3Abuild+branch%3Amaster)
+[![Version](https://img.shields.io/packagist/v/laughface809/php-api-server.svg?style=flat)](https://packagist.org/packages/laughface809/php-api-server)
 
-`php-json-server` is RESTful API with PHP. The data can be wrote json format, and you can easily set up RESTful API mock server.
+`php-api-server` is RESTful API with PHP. The data can be wrote json format, and you can easily set up RESTful API mock server.
 
 ## Installation and Startup
 
@@ -11,10 +11,10 @@ Use [Composer](https://getcomposer.org/) for installation and server start-up.
 
 ```sh
 # install
-$ composer create-project sawarame/php-json-server path/to/install
+$ composer create-project laughface809/php-api-server path/to/install
 ```
 
-Once installed, You can startup `php-json-server` with PHP build-in server.
+Once installed, You can startup `php-api-server` with PHP build-in server.
 
 ```sh
 # Startup with PHP build-in server

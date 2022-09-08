@@ -4,8 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    container_name: php-json-server
+    container_name: php-api-server
+    image: laughface809/php_manifest:latest
     ports:
-      - "8080:80"
+      - "1337:80"
     volumes:
       - .:/var/www
