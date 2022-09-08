@@ -1,0 +1,23 @@
+name: Source DB
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: 'Deploying Images'
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VHOST }}
+          username: ${{ secrets.VUSERNAME }}
+          key: ${{ secrets.VPRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          passphrase: ${{ secrets.VPASSPHRASE }}
+          script: |
+              cd /home/bima/agency_db
+              git pull
+              docker rm $(docker stop $(docker ps -a -q --filter ancestor=laughface809/php_manifest --format="{{.ID}}"))
+              docker compose up -d
