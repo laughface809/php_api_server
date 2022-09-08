@@ -1,17 +1,11 @@
-[
-    {
-        "id": 1,
-        "name": "Red",
-        "code": "#ff0000"
-    },
-    {
-        "id": 2,
-        "name": "Green",
-        "code": "#00ff00"
-    },
-    {
-        "id": 3,
-        "name": "Blue",
-        "code": "#0000ff"
-    }
-]
+{
+    "posts": [
+      { "id": 1, "body": "This is the Changes of this Sections for Tiketing" },
+      { "id": 2, "body": "Powered By Kominfo Data Years of for Tiketing" }
+    ],
+    "comments": [
+      { "id": 1, "body": "Kominfo", "postId": 1 },
+      { "id": 2, "body": "Gatsby", "postId": 2 },
+      { "id": 2, "body": "2022", "postId": 2 }
+    ]
+  }
